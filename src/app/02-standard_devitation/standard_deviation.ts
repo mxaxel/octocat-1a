@@ -12,5 +12,5 @@ export function standardDeviation(numbers: Array<number>){
             standardDeviation=Math.sqrt(summation2/numbers.length)
         }
     })
-    return standardDeviation.toFixed(2);
+    return standardDeviation;
 }
