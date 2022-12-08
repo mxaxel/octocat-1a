@@ -1,0 +1,93 @@
+<div class="calculator">
+
+    <form>
+        <div class="input-group">
+            <span class="input-group-addon">
+                <i class="glyphicon glyphicon-pencil"></i>
+            </span>
+            <input id="numero1A" [(ngModel)]="numero1A" type="number" class="form-control operator1" name="numero1A"
+                placeholder="0" />
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon">
+                <i class="glyphicon glyphicon-pencil"></i>
+            </span>
+            <input id="numero2A" [(ngModel)]="numero2A" type="number" class="form-control operator1" name="numero2A"
+                placeholder="0.0" />
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon">
+                <i class="glyphicon glyphicon-pencil"></i>
+            </span>
+            <input id="numero3A" [(ngModel)]="numero3A" type="number" class="form-control operator1" name="numero3A"
+                placeholder="0.0" />
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon">
+                <i class="glyphicon glyphicon-pencil"></i>
+            </span>
+            <input id="numero4A" [(ngModel)]="numero4A" type="number" class="form-control operator1" name="numero4A"
+                placeholder="0.0" />
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon">
+                <i class="glyphicon glyphicon-pencil"></i>
+            </span>
+            <input id="numero5A" [(ngModel)]="numero5A" type="number" class="form-control operator1" name="numero5A"
+                placeholder="0.0" />
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon">
+                <i class="glyphicon glyphicon-pencil"></i>
+            </span>
+            <input id="numero6A" [(ngModel)]="numero6A" type="number" class="form-control operator1" name="numero6A"
+                placeholder="0.0" />
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon">
+                <i class="glyphicon glyphicon-pencil"></i>
+            </span>
+            <input id="numero7A" [(ngModel)]="numero7A" type="number" class="form-control operator1" name="numero7A"
+                placeholder="0.0" />
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon">
+                <i class="glyphicon glyphicon-pencil"></i>
+            </span>
+            <input id="numero8A" [(ngModel)]="numero8A" type="number" class="form-control operator1" name="numero8A"
+                placeholder="0.0" />
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon">
+                <i class="glyphicon glyphicon-pencil"></i>
+            </span>
+            <input id="numero9A" [(ngModel)]="numero9A" type="number" class="form-control operator1" name="numero9A"
+                placeholder="0.0" />
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon">
+                <i class="glyphicon glyphicon-pencil"></i>
+            </span>
+            <input id="numero10A" [(ngModel)]="numero10A" type="number" class="form-control operator1" name="numero10A"
+                placeholder="0.0" />
+        </div>
+    </form>
+
+    <i class="mean-button" (click)="mean()"> Media </i>
+
+    <i class="deviation-button" (click)="standardDeviation()"> Desviación </i>
+
+
+</div>
+
+<span class="result">{{ TextValueMedia }}</span>
+
