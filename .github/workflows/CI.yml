@@ -1,10 +1,9 @@
 name: CI Angular app through GitHub Actions
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "release" ]
   pull_request:
-    branches: [ "master" ]
-
+    branches: [ "release" ]
 
 jobs:
   build:
@@ -17,7 +16,7 @@ jobs:
           node-version: 16.x
 
       - name: Setup
-        run: npm ci
+        run: npm ci --force
 
       - name: Test
         run: |
